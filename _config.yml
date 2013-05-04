@@ -5,18 +5,23 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
-
+markdown: rdiscount
+#markdown: "redcarpet"
+#redcarpet:
+#    extensions: [ "fenced_code_blocks", "autolink", "strikethrough", "lax_spacing", "space_after_headers", "superscript", "with_toc_data", "hard_wrap"]
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : 歪歪猪作坊
+tagline: 编程是一门手艺
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : 歪歪猪
+  email : k.caining@gmail.com
+#  github : username
+#  twitter : username
+#  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -26,7 +31,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : https://googol4u.github.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -81,7 +86,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
+    provider : weibo
     disqus :
       short_name : jekyllbootstrap
     livefyre :
@@ -93,6 +98,8 @@ JB :
       num_posts: 5
       width: 580
       colorscheme: light
+    weibo :
+      uid : 2845589454
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
